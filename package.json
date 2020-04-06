@@ -1,0 +1,28 @@
+{
+  "name": "kabratest-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f ./.env nodemon src/app.js",
+    "test": "NODE_ENV=test jest --runInBand --watchAll"
+  },
+  "author": "Dhara Vihol",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.7",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.1.5",
+    "env-cmd": "^10.1.0",
+    "jest": "^25.2.7",
+    "jest-esm-transformer": "^1.0.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
